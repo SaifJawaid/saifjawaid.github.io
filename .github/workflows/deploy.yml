@@ -2,7 +2,7 @@ name: Deploy Portfolio
 
 on:
   push:
-    branches: [ "main" ]   # runs whenever you push to main
+    branches: [ "main" ]
 
 jobs:
   build-deploy:
@@ -27,3 +27,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: main      # 👈 deploys back into main
+          force_orphan: true        # 👈 overwrites history for built files
