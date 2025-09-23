@@ -8,8 +8,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -26,6 +25,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages   # 👈 deploys only the build
           publish_dir: ./dist
-          publish_branch: main      # 👈 deploys back into main
-          force_orphan: true        # 👈 overwrites history for built files
