@@ -1,83 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saif Jawaid — Senior Machine Learning Scientist</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saif Jawaid</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <div class="container nav">
-      <div class="brand"><span class="dot"></span> Saif Jawaid</div>
-      <nav class="navlinks">
-        <a href="#/about">About</a>
-        <a href="#/experience">Experience</a>
-        <a href="#/skills">Skills</a>
-        <a href="#/education">Education</a>
-        <a href="#/publications">Publications</a>
-        <a href="#/blog">Blog</a>
-        <a href="#/contact">Contact</a>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <!-- ABOUT -->
-    <section id="about" class="active">
-      <h1 class="headline">Building resilient, agentic ML systems that self-optimize.</h1>
-      <p class="sub">Currently at <strong>Indeed</strong>, Bangalore. I design end-to-end pipelines across parsing, search, and recommendations with emphasis on routing, evaluation, and ML observability.</p>
-    </section>
+  <!-- About -->
+  <section id="about">
+    <h1>Saif Jawaid</h1>
+    <p><strong>Senior Machine Learning Scientist</strong></p>
+    <p>
+      I’m a full-stack machine learning scientist with experience in building
+      end-to-end ML systems. I’ve led projects in search, ranking,
+      recommendations, and parsing, including multi-agent systems with
+      self-optimization, observability, and advanced text extraction.
+    </p>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
-      <p>[Your timeline here]</p>
-    </section>
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MTech, Operations Research</strong> — ISI Kolkata (2017–2019)</li>
+      <li><strong>BTech, Engineering</strong> — Jadavpur University (2012–2016)</li>
+    </ul>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
-      <p>[Skill chips here]</p>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-      <p>[Education timeline here]</p>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2><i class="fa-solid fa-book"></i> Publications</h2>
-      <div id="pubs">
-        <!-- List auto-generated or static links -->
-        <p><a href="publications/diversify-bandits.html">Diversify & Conquer (RecSys '23)</a></p>
-      </div>
-    </section>
-
-    <!-- BLOG -->
-    <section id="blog">
-      <h2><i class="fa-solid fa-feather"></i> Blog</h2>
-      <input type="text" id="search" placeholder="Search blog posts..." />
-      <div id="posts" class="grid two"></div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2><i class="fa-solid fa-paper-plane"></i> Contact</h2>
-      <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
-      <p>Location: Bangalore, India</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div>© <span id="year"></span> Saif Jawaid</div>
+  <!-- Work Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="job">
+      <h3>Senior ML Scientist — Indeed</h3>
+      <p>Bangalore, India (Feb 2025 – Present)</p>
+      <ul>
+        <li>Revamped resume parsing into a multi-agent, self-optimizing pipeline.</li>
+        <li>Designed observability service for field-level evaluation.</li>
+        <li>Built advanced PDF text extraction modules.</li>
+      </ul>
     </div>
-  </footer>
+    <div class="job">
+      <h3>Lead ML Scientist — Myntra</h3>
+      <p>Bangalore, India (Jul 2019 – Jan 2025)</p>
+      <ul>
+        <li>Led projects in semantic search, ranking, and recommendations.</li>
+        <li>Contributed to 26% YoY RPU growth, CEO Hall of Fame awardee.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Data Science Intern — ABInBev</h3>
+      <p>Bangalore, India (Jan 2019 – Jun 2019)</p>
+    </div>
+    <div class="job">
+      <h3>Engineer — Shapoorji Pallonji</h3>
+      <p>Kolkata, India (Aug 2016 – Jun 2017)</p>
+    </div>
+  </section>
 
-  <script src="assets/js/main.js"></script>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, SQL, PySpark, Go, Rust, R</p>
+    <p><strong>ML:</strong> PyTorch, Keras, Hugging Face, Transformers, FAISS, XGBoost</p>
+    <p><strong>Infra:</strong> Airflow, Databricks, Docker, Kubernetes, Ray, MLflow</p>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li><a href="https://arxiv.org/abs/2309.14046" target="_blank">Diversify and Conquer: Bandits and Diversity for E-commerce Homepage</a> (RecSys 2023)</li>
+      <li><a href="https://arxiv.org/abs/2210.15451" target="_blank">Fine-Grained Session Recommendations in E-commerce using DRL</a> (KDD Workshop 2022)</li>
+      <li><a href="https://www.worldscientific.com/doi/abs/10.1142/S2010495220800019" target="_blank">Multi-Asset Portfolio Optimization</a> (AFE 2020)</li>
+      <li><a href="https://statfin.cmi.ac.in/2018/abstract/Saif_Jawid.html" target="_blank">Feature Selection on Indian Stock Market</a> (Statistical Methods in Finance 2018)</li>
+    </ul>
+  </section>
+
+  <!-- Blogs -->
+  <section id="blogs">
+    <h2>Blogs</h2>
+    <input type="text" id="searchBar" placeholder="Search blogs..." />
+    <ul id="blogList">
+      <!-- Example blog entries -->
+      <li><a href="posts/blog1.html">LLMs and Life Analogies</a></li>
+      <li><a href="posts/blog2.html">AI Observability Frameworks</a></li>
+      <li><a href="posts/blog3.html">Building Resume Parsers</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:saif.jawaid@gmail.com">saif.jawaid@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/saifjawaid" target="_blank">linkedin.com/in/saifjawaid</a></p>
+  </section>
 </body>
 </html>
