@@ -27,4 +27,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages   # 👈 put built site here
           publish_dir: ./dist
-          force_orphan: true
