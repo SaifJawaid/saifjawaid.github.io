@@ -4,81 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saif Jawaid — Senior Machine Learning Scientist</title>
-  <meta name="description" content="Senior Machine Learning Scientist crafting agentic AI systems, resume parsing pipelines, and ML observability. Projects, publications, writing, and contact." />
-  <meta name="theme-color" content="#0f172a" />
-
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <style>
-    :root{
-      --bg:#0b1020;
-      --bg-soft:#0f1830;
-      --ink:#e5e7eb;
-      --ink-dim:#aab1c3;
-      --accent:#6ee7b7;
-      --accent-2:#93c5fd;
-      --chip:#1c2545;
-      --ring: 0 10px 30px rgba(147,197,253,.15);
-    }
-    .dark:root{
-      --bg:#020617; --bg-soft:#0b1226; --ink:#e5e7eb; --ink-dim:#93a0b8; --accent:#86efac; --accent-2:#60a5fa; --chip:#0b1226;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:radial-gradient(1200px 800px at 80% -10%, rgba(147,197,253,.12), transparent 70%),radial-gradient(900px 600px at -10% -20%, rgba(110,231,183,.12), transparent 60%),var(--bg);color:var(--ink);}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:28px 20px}
-    header{position:sticky;top:0;background:linear-gradient(to bottom, rgba(11,16,32,.9), rgba(11,16,32,.6) 60%, transparent);backdrop-filter:blur(10px);z-index:50;border-bottom:1px solid rgba(148,163,184,.08)}
-    .nav{display:flex;align-items:center;justify-content:space-between;}
-    .brand{display:flex;gap:12px;align-items:center;font-weight:700;letter-spacing:.3px}
-    .brand .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 0 20px rgba(110,231,183,.5)}
-    .navlinks{display:flex;gap:18px;align-items:center}
-    .cta{padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,rgba(147,197,253,.2),rgba(110,231,183,.18));border:1px solid rgba(147,197,253,.35);box-shadow:var(--ring)}
-    .toggle{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(148,163,184,.25);padding:8px 12px;border-radius:12px;cursor:pointer}
-
-    main{min-height:70vh}
-    section{padding:36px 0;display:none}
-    section.active{display:block}
-    section h2{font-size:26px;letter-spacing:.2px;margin:0 0 14px;display:flex;align-items:center;gap:10px}
-
-    .hero{display:grid;grid-template-columns: 1.2fr .8fr;gap:28px;align-items:center;padding-top:40px}
-    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(148,163,184,.25);background:rgba(28,37,69,.5);border-radius:99px;color:var(--ink);}
-    .headline{font-size:44px;line-height:1.06;letter-spacing:-.02em;margin:16px 0 12px}
-    .sub{color:var(--ink-dim);font-size:18px}
-    .actions{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-    .btn{padding:12px 16px;border-radius:14px;border:1px solid rgba(148,163,184,.25);background:linear-gradient(180deg,rgba(28,37,69,.8),rgba(28,37,69,.6));cursor:pointer}
-    .btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0b1020;font-weight:700}
-    .card{background:linear-gradient(180deg,rgba(28,37,69,.65),rgba(28,37,69,.45));border:1px solid rgba(148,163,184,.15);border-radius:18px;padding:18px;box-shadow:var(--ring)}
-    .avatar{width:180px;height:180px;border-radius:20px;background:#0b1020 url('HEADSHOT_URL.png') center/cover no-repeat;border:1px solid rgba(148,163,184,.25);box-shadow:0 10px 40px rgba(0,0,0,.35)}
-    .grid{display:grid;gap:16px}
-    .grid.two{grid-template-columns:1fr 1fr}
-    .grid.three{grid-template-columns:repeat(3,1fr)}
-    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid.two,.grid.three{grid-template-columns:1fr}}
-
-    .timeline{position:relative}
-    .timeline:before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent),var(--accent-2))}
-    .item{position:relative;padding-left:32px;margin:16px 0}
-    .item:before{content:"";position:absolute;left:2px;top:6px;width:16px;height:16px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 0 0 4px rgba(110,231,183,.15)}
-    .item h3{margin:0 0 4px;font-size:18px}
-    .item .meta{color:var(--ink-dim);font-size:14px;margin-bottom:8px}
-    .bullets{margin:0;padding-left:18px;display:grid;gap:6px}
-
-    .chips{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{background:var(--chip);border:1px solid rgba(148,163,184,.25);border-radius:999px;padding:8px 10px;font-size:13px;color:var(--ink)}
-
-    footer{border-top:1px solid rgba(148,163,184,.12);padding:28px 0;color:var(--ink-dim)}
-    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(148,163,184,.25);border-radius:12px;margin-right:8px}
-
-    .reveal{opacity:0;transform:translateY(10px);transition:all .6s ease}
-    .reveal.show{opacity:1;transform:translateY(0)}
-
-    .post{display:flex;flex-direction:column;gap:8px}
-    .post .title{font-weight:700}
-    .post .meta{font-size:13px;color:var(--ink-dim)}
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
   <header>
@@ -88,12 +15,10 @@
         <a href="#/about">About</a>
         <a href="#/experience">Experience</a>
         <a href="#/skills">Skills</a>
-        <a href="#/publications">Publications</a>
         <a href="#/education">Education</a>
+        <a href="#/publications">Publications</a>
         <a href="#/blog">Blog</a>
         <a href="#/contact">Contact</a>
-        <a class="cta" href="resume.pdf" download>Download CV</a>
-        <button id="mode" class="toggle"><i class="fa-solid fa-moon"></i><span>Dark</span></button>
       </nav>
     </div>
   </header>
@@ -101,55 +26,49 @@
   <main class="container">
     <!-- ABOUT -->
     <section id="about" class="active">
-      <div class="hero">
-        <div>
-          <span class="badge"><i class="fa-solid fa-robot"></i> Senior ML Scientist • Agentic Systems • Observability</span>
-          <h1 class="headline">Building resilient, agentic ML systems that self‑optimize.</h1>
-          <p class="sub">Currently at <strong>Indeed</strong>, Bangalore. I design end‑to‑end pipelines across parsing, search, and recommendations with emphasis on routing, evaluation, and ML observability.</p>
-          <div class="actions">
-            <a class="btn primary" href="#/experience">See Work</a>
-            <a class="btn" href="mailto:YOUR_EMAIL">Hire / Collaborate</a>
-            <a class="btn" href="https://www.linkedin.com/in/saifjawaid" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-        <div class="card">
-          <!-- Optional headshot placeholder -->
-          <div class="avatar" title="Place optional HEADSHOT_URL.png in repo root"></div>
-          <div>
-            <div class="kicker">Current Focus</div>
-            <div style="margin:6px 0 10px;font-weight:600">Agentic resume parsing • Routing & evaluation • PDF text extraction</div>
-            <div class="chips">
-              <span class="chip">Model Routing</span>
-              <span class="chip">LLM‑as‑a‑Judge</span>
-              <span class="chip">Observability</span>
-            </div>
-          </div>
-        </div>
+      <h1 class="headline">Building resilient, agentic ML systems that self-optimize.</h1>
+      <p class="sub">Currently at <strong>Indeed</strong>, Bangalore. I design end-to-end pipelines across parsing, search, and recommendations with emphasis on routing, evaluation, and ML observability.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+      <p>[Your timeline here]</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
+      <p>[Skill chips here]</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      <p>[Education timeline here]</p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2><i class="fa-solid fa-book"></i> Publications</h2>
+      <div id="pubs">
+        <!-- List auto-generated or static links -->
+        <p><a href="publications/diversify-bandits.html">Diversify & Conquer (RecSys '23)</a></p>
       </div>
     </section>
 
     <!-- BLOG -->
-    <section id="blog" class="reveal">
+    <section id="blog">
       <h2><i class="fa-solid fa-feather"></i> Blog</h2>
-      <div class="grid two" id="posts"></div>
-      <div class="card" style="margin-top:12px">
-        <div class="kicker">LinkedIn Integration</div>
-        <p>You primarily write on LinkedIn. You can either:
-        <ul>
-          <li>Add your LinkedIn article links into the <code>POSTS</code> array (see script below).</li>
-          <li>Or create a <code>posts/</code> folder (optional) with HTML files if you want them hosted locally.</li>
-        </ul>
-        </p>
-      </div>
+      <input type="text" id="search" placeholder="Search blog posts..." />
+      <div id="posts" class="grid two"></div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="reveal">
+    <section id="contact">
       <h2><i class="fa-solid fa-paper-plane"></i> Contact</h2>
-      <div class="card">
-        <div>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></div>
-        <div>Location: Bangalore, India</div>
-      </div>
+      <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+      <p>Location: Bangalore, India</p>
     </section>
   </main>
 
@@ -159,41 +78,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Router
-    const routes = ['about','experience','skills','publications','education','blog','contact'];
-    function route(){
-      const id = (location.hash.replace('#/','') || 'about');
-      routes.forEach(r => document.getElementById(r)?.classList.remove('active'));
-      const el = document.getElementById(routes.includes(id)? id : 'about');
-      el?.classList.add('active');
-      window.scrollTo({top:0,behavior:'smooth'});
-    }
-    window.addEventListener('hashchange', route);
-    route();
-
-    // Blog posts array
-    const POSTS = [
-      {
-        title: "My daughter, LLMs, and why both need structure",
-        date: "2025-08-30",
-        tags: ["Analogy","Prompting"],
-        href: "https://www.linkedin.com/posts/YOUR_LINKEDIN_ID", // LinkedIn post link
-        excerpt: "A magnet-tiles moment that explains why providing structure beats blind fine-tuning."
-      }
-    ];
-
-    const postGrid = document.getElementById('posts');
-    if(postGrid){
-      postGrid.innerHTML = POSTS.map(p => `
-        <article class="card post">
-          <a class="title" href="${p.href}" target="_blank">${p.title}</a>
-          <div class="meta">${p.date} · ${p.tags.join(' · ')}</div>
-          <div class="sub">${p.excerpt}</div>
-        </article>`).join('');
-    }
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
