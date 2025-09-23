@@ -2,7 +2,7 @@ name: Deploy Portfolio
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]   # build whenever you push to main
 
 jobs:
   build-deploy:
@@ -25,5 +25,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages   # 👈 deploys only the build
+          publish_branch: gh-pages   # 👈 put built site here
           publish_dir: ./dist
+          force_orphan: true
