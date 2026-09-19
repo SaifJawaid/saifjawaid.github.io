@@ -74,7 +74,7 @@ const EXPERIENCE = [
   {
     role: "Senior Machine Learning Engineer",
     company: "Indeed",
-    location: "Bangalore, India",
+    location: "India",
     years: "February 2025 - Present",
     summary:
       "Building production ML and LLM systems for document understanding, application intelligence, evaluation, and reliability.",
@@ -124,6 +124,13 @@ const PUBLICATIONS = [
     venue: "PRISM Workshop, NDSS Symposium",
     year: "2026",
     link: "https://www.ndss-symposium.org/ndss-paper/auto-draft-673/",
+    authors: [
+      "Rama Rohit Reddy Gangula",
+      "Vijay Vardhan Alluri",
+      "Saif Jawaid",
+      "Dhwaj Raj",
+      "Udit Jindal",
+    ],
   },
   {
     title:
@@ -131,6 +138,7 @@ const PUBLICATIONS = [
     venue: "RecSys 2023 Workshop",
     year: "2023",
     link: "https://arxiv.org/abs/2309.14046",
+    authors: ["Sangeet Jaiswal", "Korah T Malayil", "Saif Jawaid", "Sreekanth Vempati"],
   },
   {
     title:
@@ -138,6 +146,12 @@ const PUBLICATIONS = [
     venue: "KDD 2022 Workshop",
     year: "2022",
     link: "https://arxiv.org/abs/2210.15451",
+    authors: [
+      "Diddigi Raghu Ram Bharadwaj",
+      "Lakshya Kumar",
+      "Saif Jawaid",
+      "Sreekanth Vempati",
+    ],
   },
   {
     title:
@@ -145,6 +159,7 @@ const PUBLICATIONS = [
     venue: "Annals of Financial Economics",
     year: "2020",
     link: "https://www.worldscientific.com/doi/abs/10.1142/S2010495220800019",
+    authors: ["Subhojit Biswas", "Saif Jawaid", "Diganta Mukherjee"],
   },
   {
     title:
@@ -152,6 +167,7 @@ const PUBLICATIONS = [
     venue: "Statistical Methods in Finance",
     year: "2018",
     link: "https://statfin.cmi.ac.in/2018/abstract/Saif_Jawid.html",
+    authors: ["Saif Jawaid"],
   },
 ];
 
@@ -329,12 +345,37 @@ function HeroSignal() {
   );
 }
 
+function HeroPortrait() {
+  return (
+    <motion.div {...fadeUp} className="mx-auto w-full max-w-[340px] lg:ml-auto lg:mr-0">
+      <div className="overflow-hidden rounded-lg border border-white/10 bg-white/[0.025] shadow-2xl shadow-black/30">
+        <img
+          src="/profile-placeholder.svg"
+          alt="Saif Jawaid"
+          className="aspect-[4/5] w-full object-cover"
+          width="680"
+          height="850"
+        />
+      </div>
+    </motion.div>
+  );
+}
+
+function HeroVisual() {
+  return (
+    <div className="grid min-w-0 gap-5 lg:justify-items-end">
+      <HeroPortrait />
+      <HeroSignal />
+    </div>
+  );
+}
+
 function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-28 sm:pt-32">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,#08090b,#0b0c0f_54%,#08090b)]" />
       <div className="absolute inset-0 -z-10 opacity-[0.06] [background-image:linear-gradient(#ffffff_1px,transparent_1px),linear-gradient(90deg,#ffffff_1px,transparent_1px)] [background-size:56px_56px]" />
-      <Container className="grid min-w-0 gap-10 pb-16 sm:pb-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+      <Container className="grid min-w-0 gap-10 pb-16 sm:pb-20 lg:grid-cols-[minmax(0,1.06fr)_minmax(320px,0.82fr)] lg:items-center">
         <motion.div {...fadeUp} className="min-w-0">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cyan-200/75">
             Production ML / LLM Systems
@@ -353,7 +394,7 @@ function Hero() {
             ))}
           </div>
         </motion.div>
-        <HeroSignal />
+        <HeroVisual />
       </Container>
     </section>
   );
@@ -429,6 +470,14 @@ function Experience() {
 }
 
 function Research() {
+  const renderAuthors = (authors) =>
+    authors?.map((author, authorIndex) => (
+      <span key={author}>
+        {authorIndex > 0 && <span className="text-zinc-600">, </span>}
+        {author === SITE.name ? <strong className="font-semibold text-zinc-100">{author}</strong> : author}
+      </span>
+    ));
+
   return (
     <div className="space-y-4">
       {PUBLICATIONS.map((paper, index) => (
@@ -443,6 +492,9 @@ function Research() {
               {paper.venue} / {paper.year}
             </p>
             <h3 className="mt-2 text-lg font-semibold leading-7 text-white">{paper.title}</h3>
+            {paper.authors && (
+              <p className="mt-2 text-sm leading-6 text-zinc-500">{renderAuthors(paper.authors)}</p>
+            )}
           </div>
           <ExternalAnchor
             href={paper.link}
