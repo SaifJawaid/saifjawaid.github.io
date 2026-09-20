@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Saif Jawaid">
-  <rect width="64" height="64" rx="12" fill="#08090b"/>
-  <path d="M16 21.5c0-4.7 3.8-8.5 8.5-8.5h20.8v7H24.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.9c5.1 0 9.3 4.2 9.3 9.3S44.5 41.6 39.4 41.6H19.2v-7h20.2c1.3 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3H24.5c-4.7 0-8.5-3.8-8.5-8.5Z" fill="#F4F4F5"/>
-  <path d="M43.5 50.5h-23v-7h16v-25h7v32Z" fill="#67E8F9"/>
+  <rect width="64" height="64" fill="#f5f0e6"/>
+  <rect x="6" y="6" width="52" height="52" fill="none" stroke="#d8d0c2" stroke-width="2"/>
+  <text x="32" y="40" text-anchor="middle" fill="#171b22" font-family="Georgia, Cambria, serif" font-size="22" font-weight="700">SJ</text>
 </svg>
